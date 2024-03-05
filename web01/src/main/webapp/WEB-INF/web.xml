@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>web01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 
+       servlet-name: 임의의 이름을 정한 후
+       servlet-class 에 매핑할 클래스를 적습니다.
+       url-pattern 에 매핑할 주소를 적습니다.
+   -->
+   
+  <servlet>
+     <servlet-name>helloworld</servlet-name>
+     <servlet-class>net.jackone.Helloworld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>helloworld</servlet-name>
+       <url-pattern>/hello</url-pattern>
+  </servlet-mapping>   <!-- Helloworld.java에 @WebServlet("/hello")와 같은 의미라서 하나만 써주면된다!! -->
+</web-app>
