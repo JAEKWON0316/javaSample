@@ -3,6 +3,7 @@ package web04.chapter01;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,8 +27,10 @@ public class ResFormServlet extends HttpServlet {
 		out.println("이름 : " + user + "<br>");
 		//response.sendRedirect("nservlet"); //이거는 써준 url로 바로 넘어가는것
 		//response.addHeader("Refresh", "3;url=nservlet"); //이건 3초 뒤에 url=nservlet으로 페이지를 넘김
-		String script = "<script> alert(\"이동합니다.!!\");location.href='nservlet'; </script>"; //sendRedirect와 똑같다.
-		out.print(script);
+		//String script = "<script> alert(\"이동합니다.!!\");location.href='nservlet'; </script>"; //sendRedirect와 똑같다.
+		//out.print(script);
+		RequestDispatcher dis = request.getRequestDispatcher("nservlet");
+		dis.forward(request, response); //주소창이 안바뀜
 		
 	}
 
