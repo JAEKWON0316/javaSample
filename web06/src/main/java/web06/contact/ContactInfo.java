@@ -2,7 +2,7 @@ package web06.contact;
 
 public class ContactInfo {
    //셋으로 받아서 겟으로 바꿔서 쓰기
-    private String name;
+    private String name = "이재권";
     private String email;
     
    public String getName() { 

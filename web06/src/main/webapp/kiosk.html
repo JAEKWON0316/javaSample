@@ -35,12 +35,12 @@
 </head>
 <body>
     
-    <form action="select.jsp">
-        <label><input type="radio" name="coke" value="1500" /><span>콜라</span></label>
-        <label><input type="radio" name="soda" value="1000" /><span>사이다</span></label>
-        <label><input type="radio" name="hwanta" value="1200" /><span>환타</span></label>
-        <label><input type="radio" name="milkiss" value="1300" /><span>밀키스</span></label>
-        <label><input type="radio" name="sol" value="800" /><span>솔의눈</span></label>
+    <form action="kt"> <!-- 라디오버튼은 name이값이 똑같아야 하나만 선택할 수 있다. -->
+        <label><input type="radio" name="pr" value="콜라" data-price="1000" /><span>콜라</span></label>
+        <label><input type="radio" name="pr" value="사이다" data-price="2000" /><span>사이다</span></label>
+        <label><input type="radio" name="pr" value="환타" data-price="3000" /><span>환타</span></label>
+        <label><input type="radio" name="pr" value="밀키스" data-price="4000" /><span>밀키스</span></label>
+        <label><input type="radio" name="pr" value="솔의눈" data-price="5000" /><span>솔의눈</span></label>
         <button type="submit">주문</button>
     </form>
 </body>
