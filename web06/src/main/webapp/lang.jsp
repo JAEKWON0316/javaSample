@@ -31,4 +31,4 @@
     </div>
     
 </body>
-</html>"C:/Users/i7C-402/Documents/카카오톡 받은 파일/plugin.jsp"
+</html>
