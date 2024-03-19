@@ -2,6 +2,7 @@
     pageEncoding="UTF-8" %>   
     <jsp:useBean id="time" class="java.util.Date" scope="page" /> <!-- JSP액션 -->
     <jsp:useBean id="hello" class="web06.hello.HelloBean" scope="page" />
+    
 <!DOCTYPE html>
 <html>
 <head>
